@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../styles/css/contact.css" type="text/css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <header class="main-header d-none d-lg-block">
+        <div class="container flex-between">
+            <div class="logo-about flex-center">
+                <a href="../index.html">
+                    <object class="show-modal" data="../assets/svg/logo-on-white.svg" type="">
+                    </object>
+                </a>
+                <div class="logo-subsection flex-center">
+                    <object data="../assets/svg/slash.svg" type=""></object>
+                    <span class="txt--logo txt--m-reg">контакти</span>
+                    <object data="../assets/svg/slash-logo.svg" type=""></object>
+                </div>
+            </div>
+            <span class="slash"></span>
+            <div class="header-info__wrapper">
+                <div class="header-contacts txt--g-text">
+                    <div class="languages" id="act-lang">
+                        <span class="language active-lang">УК</span>
+                        <span class="language">РУ</span>
+                        <span class="language">EN</span>
+                    </div>
+                    <div class="dot-sep"></div>
+                    <span class="adress">Одеса, Адміральський пр., 3</span>
+                    <div class="dot-sep"></div>
+                    <span class="number">+38 (050) 390 15 91</span>
+                    <div class="dot-sep"></div>
+                    <a href="https://www.facebook.com/Hillel.IT.School/" target="blank">
+                        <object class="fb" data="../assets/svg/fb-grey.svg" type="image/svg+xml"></object>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav-items" id="act-nav">
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg" href="./about.html">о нас</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg" href="#">послуги</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg" href="./team.html">команда</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg" href="#">публікації</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg  active-nav" href="#">контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <header class="main-header-mobile d-lg-none">
+        <div class="container">
+            <div class="topbar-mobile flex-between txt--g-text">
+                <div class="languages" id="act-lang">
+                    <span class="language active-lang">УК</span>
+                    <span class="language">РУ</span>
+                    <span class="language">EN</span>
+                </div>
+                <span class="number">+38 (050) 390 15 91</span>
+            </div>
+            <nav class="main-nav-mob flex-between">
+                <div class="logo-about flex-center">
+                    <a href="../index.html">
+                        <object class="show-modal" data="../assets/svg/logo-on-white-mob.svg" type="">
+                        </object>
+                    </a>
+                    <div class="logo-subsection-2 flex-center">
+                        <object data="../assets/svg/slash-mob.svg" type=""></object>
+                        <span class="txt--logo-mob txt--m-reg">контакти</span>
+                        <object data="../assets/svg/slash-logo-mob.svg" type=""></object>
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" id="icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+                <ul class="main-nav-mob-items">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" id="icon" class="exit-menu">
+                        <object class="exit-menu-btn" data="../assets/svg/exit-menu.svg" type=""></object>
+                    </label>
+                    <div class="bgc-menu"></div>
+                    <li class="main-nav-mob-item" id="act-nav">
+                        <a class="main-nav-mob-link" href="./about.html">о нас</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="#">послуги</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="./team.html">команда</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="#">публікації</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link  active-nav" href="#">контакти</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-section">
+        <div class="flex-center">
+            <div class="main-section__contact">
+                <p class="intro txt--m-reg txt--adress">Одеса,<br>Адміральський пр., 3</p>
+                <div class="border-grey"></div>
+                <p class="intro txt--m-alt txt--number">+38 (050) 390 15 95</p>
+                <a class="intro txt--act-reg txt--email" href="mailto:contact@hlegals.net"
+                    target="blank">contact@hlegals.net</a>
+                <div class="border-grey"></div>
+                <a href="https://www.facebook.com/Hillel.IT.School/" target="blank" class="flex-start-center fb-item">
+                    <object class="footer-fb-logo show-modal" data="../assets/svg/fb-blue.svg"
+                        type="image/svg+xml"></object>
+                    <span class="txt--fb txt--act-reg txt--uppercase">Наша сторінка<br> в фейсбуці</span>
+                </a>
+            </div>
+            <div class="main-section__form">
+                <form class="form-help flex-column" action="#" enctype="text/plain" method="GET">
+                    <h2 class="hero-mob txt--gr-red">Ми хотіли б Вам допомогти</h2>
+                    <input class="input-name p" type="text" placeholder="Iм’я" required>
+                    <input class="input-message p" type="text" placeholder="Повідомлення" required>
+                    <h3 class="txt--h3 h-3-caps txt--g-text">Як вам відповісти?</h3>
+                    <input class="input-number p" type="tel" placeholder="Номер телефона" required>
+                    <input class="input-email p" type="email" placeholder="Чи email">
+                    <input class="btn btn-blue txt--white mx-auto" type="submit" value="Надіслати запит"></input>
+                </form>
+            </div>
+        </div>
+    </main>
+    <section class="section-map">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.638280929985!2d30.
+            737941415791028!3d46.43604867608966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x40c63396894457b7%3A0x7f6c5236cbcb70c8!2sAdmiral&#39;s&#39;
+            kyi%20Ave%2C%203%2C%20Odesa%2C%20Odes&#39;ka%20oblast%2C%2065000!5e0!3m2!1sen!2sua!4v1626960652268!5m2!1sen!2sua"
+                width="1440" height="600" style="border:0;" allowfullscreen="" loading="lazy" seamless>
+            </iframe>
+        </div>
+    </section>
+    <footer class="main-footer bgc-grey">
+        <div class="container-second flex-between-start">
+            <div class="main-footer__contacts">
+                <div class="main-footer__adress flex-start-center">
+                    <span class="txt--adress txt--m-reg">Одеса, Адміральський пр., 3</span>
+                    <div class="dot-footer dot-6x6"></div>
+                    <a class="txt--map txt--uppercase txt--act-reg" href="#">Подивитися на мапі</a>
+                </div>
+                <div class="main-footer__social flex-start-center">
+                    <a href="https://www.facebook.com/Hillel.IT.School/" target="blank">
+                        <object class="footer-fb-logo" data="../assets/svg/fb-blue.svg" type="image/svg+xml"></object>
+                    </a>
+                    <div class="dot-footer-2 dot-6x6"></div>
+                    <span class="txt--phone txt--m-alt">+38 (050) 390 15 91</span>
+                    <div class="dot-footer-2 dot-6x6"></div>
+                    <a class="txt--email txt--act-reg" href="mailto:contact@hlegals.net"
+                        target="blank">contact@hlegals.net</a>
+                </div>
+            </div>
+            <div class="main-footer__copyright">
+                <p class="txt--g-text txt--copyright">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/active.js"></script>
+    <script src="./js/active.js"></script>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>

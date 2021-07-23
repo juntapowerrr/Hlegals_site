@@ -1,0 +1,122 @@
+@import 'var';
+@import 'reset';
+@import 'common';
+@import 'common2';
+//fonts
+@import 'fonts';
+//preloader
+@import 'preloader';
+
+// header
+.main-header, .main-header-mobile{
+    .logo-subsection{
+        padding-bottom: 15px;
+    }
+    .logo-subsection-2{
+        font-weight: 700;
+    }
+    .txt--logo{
+        font-family: 'TT Norms Regular';
+        font-size: $font-size--h1;
+    }
+}
+
+.main-nav-mob{
+    #icon svg {
+        color: $main-regular;
+        height: 28px;
+        transition: all .3s ease;
+    }
+    .txt--logo-mob{
+        font-family: 'TT Norms Regular';
+        font-size: 19px;
+    }
+    .logo-subsection-2{
+        padding-bottom: 10px;
+    }
+}
+
+.main-section{
+    margin-top: 80px;
+    &__contact{
+        margin-right: 150px;
+        width: 298px;
+        .txt--adress{
+            margin-bottom: 20px;
+        }
+        .txt--number{
+            margin-top: 40px;
+        }
+        .txt--email{
+            display:block;
+            margin: 20px 0 40px 0;
+        }
+        .fb-item{
+            margin-top: 20px;
+        }
+        .txt--fb{
+            margin-left: 10px;
+            font-family: 'TT Norms Bold';
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 1px;
+        }
+        .txt--fb:hover{
+            color: $accent;
+            transition: color .3s ease;
+        }
+    }
+    &__form{
+        .form-help{
+            width: 527px;
+            height: 576px;
+            background-color: $grey-bg;
+            border-radius: 12px;
+            padding: 20px;
+            input{
+                border-radius: 8px;
+                outline: none;
+                border: none;
+            }
+            input::placeholder{
+                color: $grey-text;
+            }
+            .input-name{
+                padding: 10px;
+                margin-top: 20px;
+            }
+            .input-message{
+                padding: 10px 0 140px 10px;
+                margin-top: 20px;
+            }
+            .txt--h3{
+                margin: 20px 0 0 10px;
+            }
+            .input-number{
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .input-email{
+                padding: 10px;
+                margin: 20px 0;
+            }
+            .btn[type=button]{
+                font-family: 'TT Norms Bold';
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.section-map{
+    margin-top: 80px;
+    .map{
+        text-align:center;
+        width:100%;
+    }
+    iframe{
+        max-width: 100%;
+    }
+}
+//media
+@import 'media-contact';

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+    height=device-height, user-scalable=yes">
+    <title>Головна</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/css/index.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <header class="main-header d-none d-md-block">
+        <div class="container flex-between">
+            <a class="logo-on-dark" href="#">
+                <object class="show-modal" data="./assets/svg/Logo-on-dark.svg" type=""></object>
+            </a>
+            <div class="header-info__wrapper">
+                <div class="header-contacts txt--white">
+                    <div class="languages" id="act-lang">
+                        <span class="language active-lang">УК</span>
+                        <span class="language">РУ</span>
+                        <span class="language">EN</span>
+                    </div>
+                    <div class="dot-sep"></div>
+                    <span class="adress">Одеса, Адміральський пр., 3</span>
+                    <div class="dot-sep"></div>
+                    <span class="number">+38 (050) 390 15 91</span>
+                    <div class="dot-sep"></div>
+                    <a href="https://www.facebook.com/Hillel.IT.School/" target="blank">
+                        <object class="fb" data="./assets/svg/fb-white.svg" type="image/svg+xml"></object>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav-items">
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--white" href="./pages/about.html">о нас</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--white" href="#">послуги</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--white" href="./pages/team.html">команда</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--white" href="#">публікації</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--white" href="./pages/contact.html">контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <header class="main-header-mobile d-md-none">
+        <div class="container">
+            <div class="topbar-mobile flex-between">
+                <div class="languages txt--white" id="act-lang">
+                    <span class="language active-lang">УК</span>
+                    <span class="language">РУ</span>
+                    <span class="language">EN</span>
+                </div>
+                <span class="number txt--white">+38 (050) 390 15 91</span>
+            </div>
+            <nav class="main-nav-mob flex-between">
+                <a href="#" class="logo-on-dark">
+                    <object class="show-modal" data="./assets/svg/logo-on-dark-mob.svg" type=""></object>
+                </a>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" id="icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+                <ul class="main-nav-mob-items">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" id="icon" class="exit-menu">
+                        <object class="exit-menu-btn" data="./assets/svg/exit-menu.svg" type=""></object>
+                    </label>
+                    <div class="bgc-menu"></div>
+                    <li class="main-nav-mob-item" id="act-nav">
+                        <a class="main-nav-mob-link" href="./pages/about.html">о нас</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="#">послуги</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="./pages/team.html">команда</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="./pages/contact.html">публікації</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="#">контакти</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-section">
+        <div class="bgc-gradient-1 main-section--bgc"></div>
+        <div class="main-section__overlay">
+            <div class="main-section__pattern d-none d-md-block">
+                <object data="./assets/svg/pattern-splash.svg" type=""></object>
+            </div>
+            <div class="main-section__p-long-logo d-none d-sm-block">
+                <object data="./assets/svg/p-long.svg" type=""></object>
+            </div>
+            <div class="main-section__p-long-logo-mob d-block d-sm-none">
+                <object data="./assets/svg/p-long-mob.svg" type=""></object>
+            </div>
+            <div class="main-section--title">
+                <h1 class="h-1 txt--white txt--center">системний адміністратор<br>
+                    правових рішень
+                </h1>
+            </div>
+            <div class="main-section__shade"></div>
+            <a class="main-section__scroll" href="#scrollspyBottom">
+                <div class="ellipse"></div>
+                <div class="arrow arrow-bottom"></div>
+            </a>
+        </div>
+        </div>
+    </main>
+    <section class="section-first" id="scrollspyBottom">
+        <div class="bgc-gradient-2 section-first--bgc"></div>
+        <div class="card-shadow">
+            <div class="bgc-shadow-1 bgc-shadow-1__first"></div>
+            <div class="bgc-shadow-2 bgc-shadow-2__first"></div>
+        </div>
+        <div class="section-first__experience container flex-center">
+            <div class="section-first__experience-titles txt--right d-none d-lg-block" id="act-exp">
+                <h5 class="exp--title hero txt--g-text active-exp">Послідовні</h5>
+                <h5 class="exp--title hero txt--g-text">Клієнтоорієнтовані</h5>
+                <h5 class="exp--title hero txt--g-text">Інноваційні</h5>
+                <h5 class="exp--title hero txt--g-text">Бізнес-орієнтовані<br> юристи</h5>
+                <div class="separator"></div>
+            </div>
+            <div class="section-first__experience-intro d-none d-lg-block">
+                <h2 class="h-2 txt--white">Перевертаємо уявлення про юридичні послуги</h2>
+                <p class="exp--txt intro txt--white">
+                    Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні
+                    проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику
+                    застосування морського права в Україні.
+                </p>
+            </div>
+        </div>
+        <div class="section-first__experience-mob container d-lg-none">
+            <h5 class="exp-mob--title h-3-caps txt--gr-red">Послідовні</h5>
+            <h2 class="exp-mob--title-2 h-2-mob txt--white">Перевертаємо уявлення про юридичні послуги</h2>
+            <p class="exp-mob--txt p txt--white">
+                Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні
+                проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику
+                застосування морського права в Україні.
+            </p>
+            <div class="slider section-first__slider flex-center" id="act-sl">
+                <div class="slider__item active-slider"></div>
+                <div class="slider__item"></div>
+                <div class="slider__item"></div>
+                <div class="slider__item"></div>
+            </div>
+        </div>
+        <div class="section-first__services container">
+            <div class="section-first__services-titles">
+                <div class="d-inline">
+                    <a class="txt--services h-3-caps txt--white" href="#">послуги<i class="arrow-1 arrow-right"></i></a>
+                </div>
+                <h5 class="txt--gr-red hero d-none d-lg-block">Що ми вміємо робити краще за інших?</h5>
+                <h5 class="txt--gr-red hero-mob d-lg-none">Що ми вміємо робити краще за інших?</h5>
+            </div>
+            <div class="section-first__services-items flex-between">
+                <div class="row row-1--mrg g-0">
+                    <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                        <div class="media-flex-760">
+                            <div class="services-icon__wrapped">
+                                <object class="services-icon" data="./assets/svg/shopping-icon.svg" type=""></object>
+                            </div>
+                            <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">IT та електронна комерція</h3>
+                            <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">IT та електронна комерція</h3>
+                        </div>
+                        <p class="serv--txt p txt--white">
+                            Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери —
+                            юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб
+                            наймати
+                            інхауз-юриста.
+                        </p>
+                    </div>
+                    <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                        <div class="media-flex-760">
+                            <div class="services-icon__wrapped">
+                                <object class="services-icon" data="./assets/svg/case-icon.svg" type=""></object>
+                            </div>
+                            <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">
+                                Комплексний щоденний
+                                юридичний супровід
+                            </h3>
+                            <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">
+                                Комплексний щоденний
+                                юридичний супровід
+                            </h3>
+                        </div>
+                        <p class="serv--txt p txt--white">
+                            До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре
+                            знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних
+                            технологій.
+                        </p>
+                    </div>
+                    <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                        <div class="media-flex-760">
+                            <div class="services-icon__wrapped">
+                                <object class="services-icon" data="./assets/svg/crowdfunding-icon.svg"
+                                    type=""></object>
+                            </div>
+                            <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">Структуризація корпоративних
+                                відносин</h3>
+                            <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">Структуризація корпоративних
+                                відносин</h3>
+                        </div>
+                        <p class="serv--txt p txt--white">
+                            Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які
+                            впишуться в
+                            повсякденне життя вашої компанії.
+                        </p>
+                    </div>
+                    <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                        <div class="media-flex-760">
+                            <div class="services-icon__wrapped">
+                                <object class="services-icon" data="./assets/svg/hands-icon.svg" type=""></object>
+                            </div>
+                            <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">Побудовa договірних відносин</h3>
+                            <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">Побудовa договірних відносин</h3>
+                        </div>
+                        <p class="serv--txt p txt--white">
+                            Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в
+                            компанії
+                            може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування
+                            статусу update.
+                        </p>
+                    </div>
+                    <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                        <div class="media-flex-760">
+                            <div class="services-icon__wrapped">
+                                <object class="services-icon" data="./assets/svg/security-icon.svg" type=""></object>
+                            </div>
+                            <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">Захист бізнесу, інтелектуальної
+                                власності</h3>
+                            <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">Захист бізнесу, інтелектуальної
+                                власності</h3>
+                        </div>
+                        <p class="serv--txt p txt--white">
+                            А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не
+                            зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners
+                            замість
+                            корпоративного юриста.
+                        </p>
+                    </div>
+                    <div class="section-first__services-item col-lg-4 col-md-6 col-sm-12">
+                        <div class="media-flex-760">
+                            <div class="services-icon__wrapped">
+                                <object class="services-icon" data="./assets/svg/lawyer-icon.svg" type=""></object>
+                            </div>
+                            <h3 class="serv--h3 h-3 txt--act-reg d-none d-md-block">Судове представництво</h3>
+                            <h3 class="serv--h3-mob h-3-mob txt--act-reg d-md-none">Судове представництво</h3>
+                        </div>
+                        <p class="serv--txt p txt--white">
+                            Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або
+                            транснаціональна
+                            компанія? Маєте власний юридичний відділ, чи ні?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-second">
+        <div class="container-second">
+            <div class="d-none d-lg-block">
+                <div class="section-second__team d-flex bgc-grey">
+                    <div class="section-second__team-img">
+                        <img src="./assets/images/oleksandr-photo.png" alt="">
+                    </div>
+                    <div class="section-second__team-heading">
+                        <a class="title--team h-3-caps txt--act-reg" href="./pages/team.html">команда<i
+                                class="arrow-2 arrow-right"></i></a>
+                        <p class="txt--team hero txt--gr-red">
+                            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                            вчасну допомогу, навіть у
+                            ситуаціях, коли більшість безсилі.
+                        </p>
+                        <h4 class="txt--team-h4 h-4 txt--g-text">Олександр Олександровський</h4>
+                        <p class="txt--team-2 p-min txt--g-text">Керуючий партнер</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-none">
+                <div class="section-second__team-mob bgc-grey">
+                    <div class="section-second__team-heading-mob">
+                        <a class="title--team-mob h-3-caps txt--act-reg" href="./pages/team.html">команда<i
+                                class="arrow-2 arrow-right"></i>
+                        </a>
+                        <p class="txt--team-mob hero-mob txt--gr-red">
+                            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                            вчасну допомогу, навіть у
+                            ситуаціях, коли більшість безсилі.
+                        </p>
+                        <div class="section-second__partner d-flex">
+                            <img src="./assets/images/team-partner.png" alt="">
+                            <div class="partner-info">
+                                <h4 class="txt--team-h4-mob h-4 txt--g-text">Олександр Кац</h4>
+                                <p class="txt--team-2-mob p-min txt--g-text">Керуючий партнер</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider section-second__slider flex-center" id="act-sl">
+                        <div class="slider__item active-slider"></div>
+                        <div class="slider__item"></div>
+                        <div class="slider__item"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-case">
+                <div class="card-case__row">
+                    <div class="card-case__col-1 flex-column-end">
+                        <div class="card-case__col-title">
+                            <h3 class="h-3-caps txt--accent">Успішні кейси</h3>
+                        </div>
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Супровід проекту з <br>
+                                купівлі-продажу <br class="d-none d-md-block">
+                                сільськогосподарської продукції
+                            </h3>
+                            <p class="company--txt p txt--g-text">Hillel IT School</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-2 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Підготовка комплексного <br class="d-none d-md-block">
+                                юридичного висновку для <br class="d-none d-md-block">
+                                європейського банку
+                            </h3>
+                            <p class="company--txt p txt--g-text">WannaBizh</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-3 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Супровід проекту з <br>
+                                купівлі-продажу <br class="d-none d-md-block">
+                                сільськогосподарської продукції
+                            </h3>
+                            <p class="company--txt p txt--g-text">tapgerine</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-4 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Представництво <br class="d-none d-md-block">
+                                інтересів великого <br class="d-none d-md-block">
+                                зернотрейдера в <br class="d-none d-md-block">
+                                податковому спорі
+                            </h3>
+                            <p class="company--txt p txt--g-text">3D LOOK</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-5 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Оскарження податкових <br class="d-none d-md-block">
+                                повідомлень-рішень ДФС
+                            </h3>
+                            <p class="company--txt p txt--g-text">adtelligent</p>
+                        </div>
+                    </div>
+                    <div class="card-case__col-6 flex-column-end">
+                        <div class="card-case__content flex-1 flex-column-end">
+                            <h3 class="txt--card-case h-3 txt--m-soft">
+                                Супровід проекту з кредитування <br class="d-none d-md-block">
+                                агротрейдерів мальтійським банком
+                            </h3>
+                            <p class="company--txt p txt--g-text">Cliсkky</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clients-grid">
+            <h3 class="clients-grid__title h-3-caps txt--center txt--m-reg">Вже довіряють нам</h3>
+            <div class="clients-grid__row">
+                <div class="clients-grid__col bg-client-1 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/hillel-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-2 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/wanna-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-3 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/tapgerine-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-4 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/3dlook-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-5 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/orangear-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-6 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/adtelligent-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-7 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/clickky-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-8 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/ecolease-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-9 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/infratek-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-10 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/citypark-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-11 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/artprint-clients-logo.png" alt="">
+                </div>
+                <div class="clients-grid__col bg-client-12 flex-center">
+                    <img class="img-fluid" src="./assets/images/clients-logo/ultimate-clients-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-third bgc-grey">
+        <div class="container-second">
+            <div class="section-publications">
+                <div class="section-publications__titles-block">
+                    <a class="txt--title-pub1 h-3-caps txt--act-reg" href="#">публікації<i
+                            class="arrow-2 arrow-right"></i></a>
+                    <h4 class="txt--gr-red hero">Нам є що розповісти</h4>
+                </div>
+                <div class="section-publications__pub-cards">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="section-publications__pub-card-1 padding-20 bgc-white">
+                                <h4 class="h-4 txt--act-reg">Валютний контроль помер, хай живе валютний контроль!</h4>
+                                <p class="txt--pub-date txt--g-text txt--uppercase">14 червня</p>
+                                <div class="border-grey"></div>
+                                <p class="txt--pub-p p-min txt--black">
+                                    Експерти проводять конференції, круглі столи та іншого штибу заходи на тему
+                                    «лібералізація валютного законодавства». Юристи-експерти-новелісти стирають пальці
+                                    об
+                                    «ctrl+c/ctrl+v».
+                                </p>
+                            </div>
+                            <div class="section-publications__pub-card-2 bgc-white">
+                                <img class="mw-100 mx-auto d-block" src="./assets/images/publications-img-1.png"
+                                    alt="Photo of happy people">
+                                <div class="padding-20">
+                                    <h4 class="h-4 txt--act-reg">Заповіт міленіала</h4>
+                                    <p class="txt--pub-date txt--g-text txt--uppercase">19 серпня</p>
+                                    <div class="border-grey"></div>
+                                    <p class="txt--pub-p p-min txt--black">
+                                        Що і як передаватимуть у спадщину сучасні влогери, опініон лідери і
+                                        криптомільйонери Типовий спадок українського покоління Х виглядає так: квартира
+                                        у…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="section-publications__pub-card-3 bgc-white">
+                                <img class="mw-100 mx-auto d-block" src="./assets/images/publications-img-2.png"
+                                    alt="Product presentation photo">
+                                <div class="padding-20">
+                                    <h4 class="h-4 txt--act-reg">Equity associate</h4>
+                                    <p class="txt--pub-date txt--g-text txt--uppercase">22 квітня</p>
+                                    <div class="border-grey"></div>
+                                    <p class="txt--pub-p p-min txt--black">
+                                        На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося.
+                                        Перед
+                                        вступом батьки мені казали, що якщо буду…
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="section-publications__pub-card-4 bgc-white">
+                                <img class="mw-100 mx-auto d-block" src="./assets/images/publications-img-3.png"
+                                    alt="Photo of the monument to the Ukrainian girl">
+                                <div class="padding-20">
+                                    <h4 class="h-4 txt--act-reg">Закон про мови: як зробити свій сайт відповідним</h4>
+                                    <p class="txt--pub-date txt--g-text txt--uppercase">19 серпня</p>
+                                    <div class="border-grey"></div>
+                                    <p class="txt--pub-p p-min txt--black">
+                                        Наталія Кирик, керівник контент студії Wordfactory.ua По-перше, це красиво! Це
+                                        аргумент номер один на користь україномовного сайту. По-друге, це ефективно.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="section-publications__pub-card-5 bgc-white">
+                                <img class="mw-100 mx-auto d-block" src="./assets/images/publications-img-4.png"
+                                    alt="Product presentation photo">
+                                <div class="padding-20">
+                                    <h4 class="h-4 txt--act-reg">Штраф для «Корпорації добра»: що буде з Google та
+                                        іншими за порушення GDPR</h4>
+                                    <p class="txt--pub-date txt--g-text txt--uppercase">29 вересня</p>
+                                    <div class="border-grey"></div>
+                                    <p class="txt--pub-p p-min txt--black">
+                                        І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами
+                                        Mind.ua 21 січня Національна комісія із захисту даних.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="section-publications__pub-card-6 bgc-white">
+                                <img class="mw-100 mx-auto d-block" src="./assets/images/publications-img-5.png"
+                                    alt="Product presentation photo">
+                                <div class="padding-20">
+                                    <h4 class="h-4 txt--act-reg">Компенсація витрат на навчання дитини в дитячому садку
+                                        та школі</h4>
+                                    <p class="txt--pub-date txt--g-text txt--uppercase">5 Лютого 2018</p>
+                                    <div class="border-grey"></div>
+                                    <p class="txt--pub-p p-min txt--black">
+                                        Про що йде мова В червні цього року Верховна Рада внесла зміни до Податкового
+                                        кодексу України. Відтепер батьки, які отримують офіційну…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-third__shade"></div>
+            <div class="section-third__btn-block-pub txt--center">
+                <button class="btn btn-blue txt--white">Ще публікації</button>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer bgc-grey">
+        <div class="container-second flex-between-start">
+            <div class="main-footer__contacts">
+                <div class="main-footer__adress flex-start-center">
+                    <span class="txt--adress txt--m-reg">Одеса, Адміральський пр., 3</span>
+                    <div class="dot-footer dot-6x6"></div>
+                    <a class="txt--map txt--uppercase txt--act-reg" href="./pages/contact.html">Подивитися на мапі</a>
+                </div>
+                <div class="main-footer__social flex-start-center">
+                    <a href="https://www.facebook.com/Hillel.IT.School/" target="blank">
+                        <object class="footer-fb-logo" data="./assets/svg/fb-blue.svg" type="image/svg+xml"></object>
+                    </a>
+                    <div class="dot-footer-2 dot-6x6"></div>
+                    <span class="txt--phone txt--m-alt">+38 (050) 390 15 91</span>
+                    <div class="dot-footer-2 dot-6x6"></div>
+                    <a class="txt--email txt--act-reg" href="mailto:contact@hlegals.net"
+                        target="blank">contact@hlegals.net</a>
+                </div>
+            </div>
+            <div class="main-footer__copyright">
+                <p class="txt--g-text txt--copyright">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/active.js"></script>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>

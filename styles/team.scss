@@ -1,0 +1,72 @@
+@import 'var';
+@import 'reset';
+@import 'common';
+@import 'common2';
+//fonts
+@import 'fonts';
+//preloader
+@import 'preloader';
+
+// header
+.main-header, .main-header-mobile{
+    .logo-subsection{
+        padding-bottom: 15px;
+    }
+    .logo-subsection-2{
+        font-weight: 700;
+    }
+    .txt--logo{
+        font-family: 'TT Norms Regular';
+        font-size: $font-size--h1;
+    }
+}
+
+.main-nav-mob{
+    #icon svg {
+        color: $main-regular;
+        height: 28px;
+        transition: all .3s ease;
+    }
+    .txt--logo-mob{
+        font-family: 'TT Norms Regular';
+        font-size: 19px;
+    }
+    .logo-subsection-2{
+        padding-bottom: 10px;
+    }
+}
+
+.main-section{
+    margin-top: 80px;
+    &__title{
+        max-width: 865px;
+        margin-bottom: 80px;
+    }
+    .arrow__wrapper{
+        width: 30px;
+        height: 30px;
+        background-color: $grey-bg;
+        border-radius: 50%;
+        .arrow-2{
+            margin-left: 10px;
+        }
+    }
+    .team-case{
+        &__item:hover{
+            transform: scale(1.03);
+            transition: all .3s ease;
+        }
+        img:hover{
+            box-shadow: 0px 0px 11px -1px rgba(0,133,255,1);
+            border-radius: 10px;
+            transition: all.3s ease-out;
+        }
+    }
+}
+
+.main-footer{
+    margin-top: 60px;
+}
+
+//media
+@import 'media-team';

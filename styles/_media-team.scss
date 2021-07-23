@@ -1,0 +1,138 @@
+@media (max-width: 993px) {
+    .main-nav-mob{
+        .bgc-menu{
+            position: fixed;
+            width: 100%;
+            height: calc(100% - 415px);
+            background-color: $main-regular;
+            opacity: 0.7;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+        ul {
+            position: fixed;
+            width: 100%;
+            background-color: $white;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            display: none;
+            z-index: 10;
+            height: 415px;
+            border-radius: 12px 12px 0px 0px;
+            padding-top: 65px;
+        }
+
+        ul li {
+            display: block;
+            padding: 5px 20px;
+        }
+    
+        ul li a {
+            display: block;
+            padding: 10px 0;
+            font-family: 'TT Norms Medium';
+            font-size: $font-size--h3;
+        }
+    
+        #icon {
+            display: block;
+        }
+    
+        #checkbox:checked~ul {
+            display: block;
+        }
+
+        .exit-menu{
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 10;
+        }
+        .exit-menu:hover{
+            transform: scale(1.15);
+        }
+        .exit-menu-btn{
+            cursor: pointer;
+            pointer-events: none;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .team-case{
+        &__item{
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .main-section{
+        margin-top: 20px;
+        &__title{
+            margin-bottom: 20px;
+        }
+    }
+    .container-second{
+        padding: 0 20px;
+    }
+    .team-case{
+        &__item{
+            display: flex;
+            flex-direction: row;
+            img{
+               width: 158px;
+               height: 191px;
+               margin: 0;
+            }
+
+            .flex-between{
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 20px;
+                justify-content: center;
+            }
+            .arrow__wrapper{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+@media(max-width: 876px){
+    .main-footer{
+        padding-bottom: 0;
+        .flex-between-start{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__adress{
+            flex-direction: column;
+            .txt--map{
+                margin-top: 10px;
+            }
+        }
+        &__social{
+            margin-top: 0;
+            flex-direction: column;
+            .footer-fb-logo{
+                margin: 20px 0;
+            }
+            .txt--email{
+                margin: 20px 0;
+            }
+        }
+        .dot-6x6{
+            display: none;
+        }
+        &__copyright{
+            text-align: center;
+        }
+    }
+}

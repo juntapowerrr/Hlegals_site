@@ -1,0 +1,426 @@
+//header-styles
+.main-header{
+    padding-top: 50px;
+}
+.header-info__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.header-contacts{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.languages{
+    font-family: 'TT Norms Bold';
+    font-size: 12px;
+    line-height: 14px;
+    .language{
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    .active-lang, span:hover {
+        background-color: $accent;
+        transition: all 0.3s ease;
+        color: $white;
+    }
+    // :hover{
+    //     background-color: $accent;
+    //     transition: all 0.3s ease;
+    //     color: $white;
+    // }
+}
+.dot-sep{
+    width: 7px;
+    height: 7px;
+    background-color: $grey-separator;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.adress{
+    font-family: 'TT Norms Regular';
+    font-size: 16px;
+    font-weight: 400;
+}
+.number{
+    font-family: 'TT Norms Bold';
+    font-size: 16px;
+}
+.fb{
+    pointer-events: none;
+}
+.main-nav{
+    margin-top: 19px;
+    &-items{
+        display: flex;
+    }
+    &-item{
+        font-family: 'TT Norms Medium';
+        font-size: 18px;
+        .active-nav, li > a:hover {
+            border-bottom: 2px solid $accent;
+            color: $accent;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+        :hover{
+            color: $accent;
+            transition: color 0.3s ease;
+        }
+    }
+    &-link{
+        margin-right: 15px;
+        :last-child{
+            margin-right: 0;
+        }
+    }
+}
+.topbar-mobile{
+    padding: 20px 0 10px 0;
+}
+
+.main-nav-mob{
+    ul li a {
+        color: $active-regular;
+        transition: all .3s ease;
+    }
+    
+    ul li a:hover,
+    ul li a.active {
+        color: $accent;
+        transition: color .3s ease;
+    }
+    
+    #icon {
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+    
+    #icon svg {
+        color: $white;
+        height: 28px;
+        transition: all .3s ease;
+    }
+    
+    #checkbox,
+    #icon {
+        display: none;
+    }
+    #icon:hover{
+        transform: scale(1.15);
+    }
+    &-item{
+        .active-nav, li > a:hover {
+            color: $accent;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+//slider styles
+.slider{
+    &__item{
+        width: 16px;
+        height: 16px;
+        background-color: $active-regular;
+        border-radius: 50%;
+        margin-right: 14px;
+    }
+    &__item:last-child{
+        margin-right: 0px;
+    }
+    .active-slider, div:hover {
+        background-color: $active-active;
+        transition: all 0.3s ease;
+    }
+    &__item:hover{
+        cursor: pointer;
+        background-color: $active-hover;
+    }
+
+}
+
+//card-case styles
+$card-max-width: 1320px;
+$card-point: 1320 / 100;
+.card-case{
+    // max-width: $card-max-width;
+    background-color: $grey-bg;
+    overflow: hidden;
+    margin: 70px auto;
+    border-radius: 12px;
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__col-1{
+        width: #{433% / $card-point};
+        min-height: 255px;
+        border-bottom: 1px solid $white;
+        border-right: 1px solid $white;
+    }
+    &__col-title{
+        width: 100%;
+        border-bottom: 1px solid $white;
+        padding: 20px;
+    }
+    &__content{
+        padding: 20px;
+    }
+    &__col-2{
+        width: #{454% / $card-point};
+        min-height: 255px;
+        border-bottom: 1px solid $white;
+        border-right: 1px solid $white;
+    }
+    &__col-3{
+        width: #{433% / $card-point};
+        min-height: 255px;
+        border-bottom: 1px solid $white;
+    }
+    &__col-4{
+        width: #{320% / $card-point};
+        min-height: 198px;
+        border-bottom: 1px solid $white;
+        border-right: 1px solid $white;
+    }
+    &__col-5{
+        width: #{453% / $card-point};
+        min-height: 198px;
+        border-bottom: 1px solid $white;
+        border-right: 1px solid $white;
+    }
+    &__col-6{
+        width: #{547% / $card-point};
+        min-height: 198px;
+        border-bottom: 1px solid $white;
+    }
+    .company--txt{
+        margin-top: 20px;
+    }
+}
+
+//clients-grid styles
+.clients-grid{
+    &__title{
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__col{
+        width: 25%;
+        height: 120px;
+    }
+    .bg-client-1{
+        background: #1C4280;
+    }
+    .bg-client-2{
+        background: #143646;
+    }
+    .bg-client-3{
+        background: #F48B30;
+    }
+    .bg-client-4{
+        background: #9E4DC3;
+    }
+    .bg-client-5{
+        background: #FD9339;
+    }
+    .bg-client-6{
+        background: #E2E2E4;
+    }
+    .bg-client-7{
+        background: #C71C36;
+    }
+    .bg-client-8{
+        background: #DCF3F9;
+    }
+    .bg-client-9{
+        background: #EAEAEA;
+    }
+    .bg-client-10{
+        background: #282240;
+    }
+    .bg-client-11{
+        background: #1D4568;
+    }
+    .bg-client-12{
+        background: #000000;
+    }
+}
+
+//publications styles
+.section-publications{
+    position: relative;
+    padding-top: 40px;
+    .txt--title-pub1:hover{
+        color: $accent;
+    }
+    &__pub-cards{
+        margin-top: 40px;
+        height: 720px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .txt--pub-date{
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+    .txt--pub-p{
+        margin-top: 20px;
+    }
+    &__pub-card-1{
+        border-radius: 8px;
+    }
+    &__pub-card-2{
+        margin-top: 40px;
+        border-radius: 8px;
+    }
+    &__pub-card-3{
+        border-radius: 8px;
+    }
+    &__pub-card-4{
+        margin-top: 40px;
+        border-radius: 8px;
+    }
+    &__pub-card-5{
+        border-radius: 8px;
+    }
+    &__pub-card-6{
+        margin-top: 40px;
+        border-radius: 8px;
+    }
+    .border-grey{
+        margin: 20px 0;
+    }
+}
+
+//buttons
+.btn{
+    width: 250px;
+    height: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-blue{
+    background-color: $active-regular;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.btn-blue:hover{
+    background-color: $active-hover;
+    color: $white;
+}
+
+//footer styles
+.main-footer{
+    padding: 32px 0 50px 0;
+    &__adress{
+        .txt--adress{
+            font-family: 'TT Norms Regular';
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .dot-footer{
+            margin: 0 10px 0 30px;
+            background-color: $grey-text;
+        }
+        .txt--map{
+            font-family: TT Norms;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+        .txt--map:hover{
+            color: $accent;
+            transition: color .3s ease;
+        }
+    }
+    &__social{
+        margin-top: 22px;
+        .footer-fb-logo{
+            pointer-events: none;
+        }
+        .dot-footer-2{
+            margin: 0 10px;
+            background-color: $grey-text;
+        }
+        .txt--phone{
+            font-family: 'TT Norms Bold';
+            font-size: 16px;
+        }
+        .txt--email{
+            font-family: 'TT Norms Bold';
+            font-size: 16px;
+        }
+        .txt--email:hover{
+            color: $accent;
+            transition: color .3s ease;
+        }
+    }
+    &__copyright{
+        .txt--copyright{
+            font-family: 'TT Norms Medium';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+//dots
+.dot-6x6{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+//arrow styles
+.arrow-1{
+    border: solid $white;
+    opacity: 0.5;
+    margin-left: 5px;
+}
+.arrow-2{
+    border: solid $active-regular;
+    margin-left: 5px;
+}
+.arrow-right{
+    transform: rotate(-45deg);
+    cursor: pointer;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+//team-case styles
+.team-case{
+    &__item{
+        &-titles{
+            .item-link h4:hover{
+                color: $accent;
+                transition: color .3s ease;
+            }
+            h4{
+                margin-top: 20px;
+            }
+            p{
+                margin-top: 5px;
+            }
+        }
+    }
+}

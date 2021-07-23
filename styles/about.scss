@@ -1,0 +1,131 @@
+@import 'var';
+@import 'reset';
+@import 'common';
+@import 'common2';
+//fonts
+@import 'fonts';
+//preloader
+@import 'preloader';
+
+//header
+.main-header, .main-header-mobile{
+    .logo-subsection{
+        padding-bottom: 15px;
+    }
+    .txt--logo{
+        font-family: 'TT Norms Regular';
+        font-size: $font-size--h1;
+    }
+}
+
+.main-nav-mob{
+    #icon svg {
+        color: $main-regular;
+        height: 28px;
+        transition: all .3s ease;
+    }
+    .txt--logo-mob{
+        font-family: 'TT Norms Regular';
+        font-size: 19px;
+    }
+    .logo-subsection-2{
+        padding-bottom: 10px;
+    }
+}
+
+//main-section
+.main-section{
+    padding-top: 80px;
+    &__introduction{
+        max-width: 640px;
+        .txt--prolegals{
+            margin-top: 20px;
+        }
+    }
+    &__advantages{
+        max-width: 412px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 42px;
+        justify-content: flex-start;
+        border-left: 4px solid #E6E6F0;
+        &-item{
+            margin-bottom: 40px;
+            .txt--adv{
+                font-family: 'TT Norms Bold';
+                font-size: 36px;
+                margin-left: 10px;
+            }
+        }
+        :last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+//section-team
+.section-first{
+    background-image: url(../../assets/images/team-photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    height: 438px;
+    margin-top: 100px;
+    &--title{
+        font-family: 'TT Norms Bold';
+        font-size: 96px;
+        letter-spacing: 63px;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        line-height: 438px;
+    }
+}
+
+.section-second{
+    margin-top: 80px;
+    position: relative;
+    &__text{
+        margin-bottom: 120px;
+        flex-wrap: wrap;
+        .txt--about{
+            max-width: 640px;
+        }
+        .txt--about-title{
+            max-width: 414px;
+            margin-left: 40px;
+        }
+    }
+    .bgc-achievments{
+        border-radius: 12px 12px 0px 0px;
+    }
+    &__achievments{
+        h3{
+            padding-top: 30px;
+        }
+        &-items{
+            margin: 30px 0;
+        }
+        &-item{
+            width: 300px;
+            height: 109px;
+            border-radius: 12px;
+        }
+    }
+    &__slider{
+        padding-bottom: 30px;
+        .slider__item:nth-child(-n+3){
+            display: none;
+        }
+    }
+}
+
+.main-footer{
+    .container-second{
+        border-top: 4px solid $grey-separator;
+        padding-top: 30px;
+    }
+}
+
+//media
+@import 'media-about';

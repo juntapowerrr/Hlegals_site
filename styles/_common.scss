@@ -1,0 +1,228 @@
+//containers
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-second{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.container-third{
+    max-width: 1435px;
+    margin: 0 auto;
+    padding: 0 170px;
+}
+
+.flex{
+    &-between{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;   
+    }
+    &-between-start{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap; 
+    }
+    &-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    &-center-start{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;  
+    }
+    &-start-center{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &-column{
+        display: flex;
+        flex-direction: column;
+    }
+    &-column-end{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &-1{
+        flex-grow: 1;
+    }
+}
+
+.txt{
+    //color
+    &--accent{
+        color: $accent;
+    }
+    &--black{
+        color: $black;
+    }
+    &--white{
+        color: $white;
+    }
+    &--m-reg{
+        color: $main-regular;
+    }
+    &--m-alt{
+        color: $main-alt;
+    }
+    &--m-soft{
+        color: $main-soft;
+    }
+    &--act-reg{
+        color: $active-regular;
+    }
+    &--act-hov{
+        color: $active-hover;
+    }
+    &--act-act{
+        color: $active-active;
+    }
+    &--g-bg{
+        color: $grey-bg;
+    }
+    &--g-bg-alt{
+        color: $grey-bg-alt;
+    }
+    &--g-text{
+        color: $grey-text;
+    }
+    &--g-sep{
+        color: $grey-separator;
+    }
+    //color gradient
+    &--gr-red{
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: $gradient-red-text;
+    }
+    &--gr-red-rev{
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: $gradient-red-text-reversed;
+    }
+    //align and uppercase
+    &--center{
+        text-align: center;
+    }
+    &--right{
+        text-align: right;
+    }
+    &--uppercase{
+        text-transform: uppercase;
+    }
+}
+
+//text-styles
+.hero{
+    font-family: 'TT Norms Bold';
+    font-size: $font-size--hero;
+    line-height: 50px;
+    &-mob{
+        font-family: 'TT Norms Bold';
+        font-size: $font-size--hero-mob;
+        line-height: 38px;
+    }
+}
+.h{
+    &-1{
+        font-family: 'TT Norms Medium';
+        font-size: $font-size--h1;
+        line-height: 45px;
+        font-weight: 300;
+    }
+    &-2{
+        font-family: 'TT Norms Medium';
+        font-size: $font-size--h2;
+        line-height: 38px;
+    }
+    &-2-mob{
+        font-family: 'TT Norms Medium';
+        font-size: $font-size--h2-mob;
+        line-height: 26px;
+    }
+    &-3{
+        font-family: 'TT Norms Medium';
+        font-size: $font-size--h3;
+        line-height: 28px;
+    }
+    &-3-mob{
+        font-family: 'TT Norms Medium';
+        font-size: $font-size--h3-mob;
+        line-height: 21px;
+    }
+    &-3-caps{
+        font-family: 'TT Norms Bold';
+        font-size: $font-size--h3-caps;
+        line-height: 17px;
+        text-transform: uppercase;
+        
+    }
+    &-4{
+        font-family: 'TT Norms Medium';
+        font-size: $font-size--h4;
+        line-height: 21px;
+    }
+}
+.p{
+    font-family: 'TT Norms Regular';
+    font-size: $font-size--p;
+    line-height: 26px;
+    &-min{
+        font-family: 'TT Norms Regular';
+        font-size: $font-size--p;
+        line-height: 22px;
+    }
+}
+.intro{
+    font-family: 'TT Norms Regular';
+    font-size: $font-size--intro;
+    line-height: 30px;
+}
+
+//backgrounds
+.bgc-gradient-1{
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+}
+.bgc-gradient-2{
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+.bgc-grey{
+    background-color: $grey-bg;
+}
+.bgc-white{
+    background-color: $white;
+}
+
+//bgc card show{
+.bgc-shadow-1{
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+}
+.bgc-shadow-2{
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+}
+
+//padding and margin
+.padding-20{
+    padding: 20px;
+}
+
+//border
+.border-grey{
+    height: 4px;
+    background-color: $grey-separator;
+}

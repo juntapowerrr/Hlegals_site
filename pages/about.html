@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+    height=device-height, user-scalable=yes">
+    <title>О нас</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../styles/css/about.css" type="text/css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <header class="main-header d-none d-lg-block">
+        <div class="container flex-between">
+            <div class="logo-about flex-center">
+                <a href="../index.html">
+                    <object class="show-modal" data="../assets/svg/logo-on-white.svg" type="">
+                    </object>
+                </a>
+                <div class="logo-subsection flex-center">
+                    <object data="../assets/svg/slash.svg" type=""></object>
+                    <span class="txt--logo txt--m-reg">о нас</span>
+                    <object data="../assets/svg/slash-logo.svg" type=""></object>
+                </div>
+            </div>
+            <span class="slash"></span>
+            <div class="header-info__wrapper">
+                <div class="header-contacts txt--g-text">
+                    <div class="languages" id="act-lang">
+                        <span class="language active-lang">УК</span>
+                        <span class="language">РУ</span>
+                        <span class="language">EN</span>
+                    </div>
+                    <div class="dot-sep"></div>
+                    <span class="adress">Одеса, Адміральський пр., 3</span>
+                    <div class="dot-sep"></div>
+                    <span class="number">+38 (050) 390 15 91</span>
+                    <div class="dot-sep"></div>
+                    <a href="https://www.facebook.com/Hillel.IT.School/" target="blank">
+                        <object class="fb" data="../assets/svg/fb-grey.svg" type="image/svg+xml"></object>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav-items" id="act-nav">
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg active-nav" href="#">о нас</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg" href="#">послуги</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg" href="./team.html">команда</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg" href="#">публікації</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link txt--act-reg" href="./contact.html">контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <header class="main-header-mobile d-lg-none">
+        <div class="container">
+            <div class="topbar-mobile flex-between txt--g-text">
+                <div class="languages" id="act-lang">
+                    <span class="language active-lang">УК</span>
+                    <span class="language">РУ</span>
+                    <span class="language">EN</span>
+                </div>
+                <span class="number">+38 (050) 390 15 91</span>
+            </div>
+            <nav class="main-nav-mob flex-between">
+                <div class="logo-about flex-center">
+                    <a href="../index.html">
+                        <object class="show-modal" data="../assets/svg/logo-on-white-mob.svg" type="">
+                        </object>
+                    </a>
+                    <div class="logo-subsection-2 flex-center">
+                        <object data="../assets/svg/slash-mob.svg" type=""></object>
+                        <span class="txt--logo-mob txt--m-reg">о нас</span>
+                        <object data="../assets/svg/slash-logo-mob.svg" type=""></object>
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" id="icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+                <ul class="main-nav-mob-items">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" id="icon" class="exit-menu">
+                        <object class="exit-menu-btn" data="../assets/svg/exit-menu.svg" type=""></object>
+                    </label>
+                    <div class="bgc-menu"></div>
+                    <li class="main-nav-mob-item" id="act-nav">
+                        <a class="main-nav-mob-link active-nav" href="#">о нас</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="#">послуги</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="./team.html">команда</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="#">публікації</a>
+                    </li>
+                    <li class="main-nav-mob-item">
+                        <a class="main-nav-mob-link" href="./contact.html">контакти</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-section">
+        <div class="container flex-center-start">
+            <div class="main-section__introduction">
+                <h2 class="hero txt--gr-red">Перевертаємо уявлення про юридичні послуги.</h2>
+                <p class="txt--prolegals intro txt--black">
+                    Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і
+                    досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування
+                    морського права в Україні. <br><br>
+                    Prolegals – надійний бізнес-партнер, що підтверджується стабільним співробітництвом з
+                    міжнародними юридичними фірмами, довірою великих українських і міжнародних компаній, визнанням
+                    професійних рейтингів.
+                </p>
+            </div>
+            <div class="main-section__advantages">
+                <div class="main-section__advantages-item">
+                    <div class="flex-start-center">
+                        <object data="../assets/svg/adv-logo-1.svg" type=""></object>
+                        <span class="txt--adv txt--gr-red">10+</span>
+                    </div>
+                    <p class="p txt--m-reg">років релевантного досвіду</p>
+                </div>
+                <div class="main-section__advantages-item">
+                    <div class="flex-start-center">
+                        <object data="../assets/svg/adv-logo-2.svg" type=""></object>
+                        <span class="txt--adv txt--gr-red">30+</span>
+                    </div>
+                    <p class="p txt--m-reg">активних клієнтів, які довіряють нам свої доручення щомісячно</p>
+                </div>
+                <div class="main-section__advantages-item">
+                    <div class="flex-start-center">
+                        <object data="../assets/svg/adv-logo-3.svg" type=""></object>
+                        <span class="txt--adv txt--gr-red">500+</span>
+                    </div>
+                    <p class="p txt--m-reg">годин роботи «pro bono» щорічно</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="section-first">
+        <h1 class="section-first--title txt--white txt--center txt--uppercase">Команда</h1>
+    </section>
+    <div class="section-second">
+        <div class="container">
+            <div class="section-second__text flex-center-start">
+                <p class="txt--about intro txt--black">
+                    Історично незмінна юридична професія почала переформатовуватись в останні роки. Клієнти це
+                    відчувають, але юридичні фірми все ще опираються еволюції. Клієнти потребують зручності, простоти,
+                    прозорої оплати. Google, IBM WatsОn, Symantec Clearwell доводять, що технологічна революція в
+                    юридичних послугах розпочалася і стала неминучою.<br><br>
+                    Якість — це те, про що ми піклуємося найбільше.<br><br>
+                    Все просто. Якщо ви не задоволені нашою роботою, ми повернемо гроші. Ми довіряємо нашим клієнтам. І
+                    ми хочемо, щоб клієнти нам теж довіряли.
+                </p>
+                <h2 class="txt--about-title hero txt--gr-red">Якість — це те, про що ми піклуємося найбільше.</h2>
+            </div>
+        </div>
+        <div class="section-second__achievments bgc-grey bgc-achievments">
+            <div class="container">
+                <h3 class="h-3-caps txt--uppercase txt--m-reg txt--center">Досягнення</h3>
+                <div class="section-second__achievments-items flex-between">
+                    <div class="section-second__achievments-item flex-center">
+                        <img src="../assets/images/achiev-logo-1.png" alt="">
+                    </div>
+                    <div class="section-second__achievments-item flex-center">
+                        <img src="../assets/images/achiev-logo-2.png" alt="">
+                    </div>
+                    <div class="section-second__achievments-item flex-center">
+                        <img src="../assets/images/achiev-logo-3.png" alt="">
+                    </div>
+                    <div class="section-second__achievments-item flex-center">
+                        <img src="../assets/images/achiev-logo-4.png" alt="">
+                    </div>
+                </div>
+                <div class="slider section-second__slider flex-center" id="act-sl">
+                    <div class="slider__item active-slider"></div>
+                    <div class="slider__item"></div>
+                    <div class="slider__item"></div>
+                    <div class="slider__item"></div>
+                    <div class="slider__item"></div>
+                    <div class="slider__item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer bgc-grey">
+        <div class="container-second flex-between-start">
+            <div class="main-footer__contacts">
+                <div class="main-footer__adress flex-start-center">
+                    <span class="txt--adress txt--m-reg">Одеса, Адміральський пр., 3</span>
+                    <div class="dot-footer dot-6x6"></div>
+                    <a class="txt--map txt--uppercase txt--act-reg" href="./contact.html">Подивитися на мапі</a>
+                </div>
+                <div class="main-footer__social flex-start-center">
+                    <a href="https://www.facebook.com/Hillel.IT.School/" target="blank">
+                        <object class="footer-fb-logo" data="../assets/svg/fb-blue.svg" type="image/svg+xml"></object>
+                    </a>
+                    <div class="dot-footer-2 dot-6x6"></div>
+                    <span class="txt--phone txt--m-alt">+38 (050) 390 15 91</span>
+                    <div class="dot-footer-2 dot-6x6"></div>
+                    <a class="txt--email txt--act-reg" href="mailto:contact@hlegals.net"
+                        target="blank">contact@hlegals.net</a>
+                </div>
+            </div>
+            <div class="main-footer__copyright">
+                <p class="txt--g-text txt--copyright">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/active.js"></script>
+    <script src="./js/active.js"></script>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
